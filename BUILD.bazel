@@ -8,6 +8,7 @@ ts_library(
         "lib.ts",
     ],
     deps = [
+        "@npm//@types/flatbuffers",
     ],
 )
 
@@ -24,11 +25,11 @@ ts_jest_test(
     srcs = [
         "lib.test.ts",
     ],
+    data = [
+        ":jest_repro",
+    ],
     jest_config = "jest.config.js",
     deps = [
         ":lib",
     ],
-    data = [
-        ":jest_repro",
-    ]
 )

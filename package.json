@@ -1,14 +1,17 @@
 {
   "private": true,
   "devDependencies": {
+    "@bazel/typescript": "2.0.0-rc.1",
     "@types/jest": "24.9.0",
     "@types/jest-cli": "24.3.0",
     "jest-cli": "24.9.0",
     "patch-package": "6.2.1",
-    "@bazel/typescript": "2.0.0-rc.1",
     "typescript": "3.8.3"
   },
   "scripts": {
     "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@types/flatbuffers": "^1.10.0"
   }
 }

@@ -1,3 +1,5 @@
 export function doStuff(a: string): string {
-  return a
+  let tt: flatbuffers.ByteBuffer | null = null;
+  console.log(tt);
+  return a;
 }
