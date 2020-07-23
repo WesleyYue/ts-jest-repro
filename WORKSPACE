@@ -28,7 +28,3 @@ yarn_install(
 )
 
 node_repositories(package_json = ["//:package.json"])
-
-load("@npm//:install_bazel_dependencies.bzl", npm_install_bazel_dependencies = "install_bazel_dependencies")
-
-npm_install_bazel_dependencies()
